@@ -1,0 +1,262 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Интернет магазин</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/liMenuVert.css">
+	<link rel="stylesheet" href="css/liMenuVertTheme-white.css">
+	<link rel="stylesheet" href="/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+	<script src="js/jquery-1.8.min.js"></script>
+	<script src="js/jquery.liMenuVert.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+
+    <script>
+        $(function () {
+            $('.menu_vert').liMenuVert();
+        });
+    </script>
+</head>
+<body>
+    <div id="page_header">
+	<div id="logotip">
+		<img src="imges/logo.png" alt="Интернет магазин">
+	</div>
+   <div id="tel">
+		<img src="imges/tel.png">
+   </div>
+  <div id="nomer">
+    (078)765-31-10<br>
+	(097)876-89-07
+  </div>
+ <div id="search">
+	<form>
+	  <input name="q" type="text" />
+	  <input type="submit" value="Поиск" />
+	</form>
+  </div>					
+ </div>
+ <!--Nav-->
+ <div id="ver_men">
+   <ul>
+	  <li><a href="#">Каталог</a></li>
+	  <li><a href="#">Новинки</a></li>
+	  <li><a href="#">Хиты продаж</a></li>
+	  <li><a href="#">Карта</a></li>
+	</ul>
+  </div>
+ <div id="navig">
+	<ul>
+	  <li style="padding-top:15px"><a href="#">Главная</a></li>
+	  <li style="padding-top:15px"><a href="#">О компинии</a></li>
+	  <li style="padding-top:15px"><a href="#">Оплата</a></li>
+	  <li style="padding-top:15px"><a href="#">Доставка</a></li>
+	  <li style="padding-top:15px"><a href="#">Помощь</a></li>
+	  <li style="padding-top:15px"><a href="#">Контакты</a></li>
+	</ul>
+ </div>
+	
+<div id="wrap">
+ <!--Kategorii-->
+  <div class="kateg">
+	<div class="nazv">
+		<p>Категории</p>
+	</div>
+  <div style="width:190px">
+    <ul class="menu_vert">
+	  <li><a href="#">Смартфоны</a>
+	    <ul>
+		  <li><a href="#">HTC</a></li>
+		    <li><a href="#">Samsung</a>
+			  <ul>
+			    <li><a href="#">Samsung Wawe 525</a></li>
+				<li><a href="#">Samsung G565</a></li>
+				<li><a href="#">Samsung W S50</a></li>
+				<li><a href="#">Samsung galaxy III</a></li>
+			  </ul>
+		    <li><a href="#">Nokia</a></li>
+			<li><a href="#">Aplle</a></li>
+			<li><a href="#">Sony Ericson</a></li>
+		 </ul>
+		</li>
+	  <li><a href="#">Моноблок</a>
+	    <ul>
+		  <li><a href="#">Nokia</a></li>
+		  <li><a href="#">Samsung</a></li>
+		  <li><a href="#">Motorola</a></li>
+		  <li><a href="#">Sony Ericson</a></li>
+		</ul>
+	   </li>
+	  <li><a href="#">Бюджетные</a>
+		<ul>
+		  <li><a href="#">Nokia</a></li>
+		  <li><a href="#">LG</a></li>
+		  <li><a href="#">Samsung</a></li>
+		</ul>
+      </li>
+	<li><a href="#">Слайдеры</a></li>
+	<li><a href="#">Слайдеры</a></li>
+	<li><a href="#">Слайдеры</a></li>
+    <li><a href="#">Слайдеры</a></li>
+  </ul>
+ </div>
+</div>  
+<!--Sortirovka-->
+<div id="filter">
+	<div class="vnav">
+		<div class="s">
+			<p class="ss">Сортировка</p>
+		</div>
+	  <ul>
+	    <li>Стоимость
+		  <form>
+		    <p>Стоимость</br>
+			  <input id="CheckBox2" type="checkbox" class="CheckBoxClass">
+			  <label id="Label" for="CheckBox2" class="CheckBoxLabelClass">Дорогие-дешовые</label>
+			  <input id="CheckBox3" type="checkbox" class="CheckBoxClass">
+			  <label id="Label1" for="CheckBox3" class="CheckBoxLabelClass">Дешовые-дорогие</label>	
+		  </form> 				
+	     </li>
+	    <li>Рейтинг<p>Know About our company</p></li>
+		<li>Алфавит<p>Check our Portfolio</p></li>
+		<li style="border-bottom-left-radius:8px; border-bottom-right-radius:8px;">Стоимость<p>Have a question?</p></li>
+	   </ul>
+   <script>
+	$(document).ready(function(){
+	//When Mouse rolls over li	
+   	  $(".vnav ul li").mouseover(function(){
+        $(this).stop().animate({height:'80px'},{queue:false, duration:600})
+   	});
+	//When Mouse cursor removed from li
+	  $(".vnav ul li").mouseout(function(){
+        $(this).stop().animate({height:'20px'},{queue:false, duration:600})
+    });
+	});
+  </script>
+ </div>
+</div>
+<!--Filter-->
+<div id ="fil">
+	<div class="f">
+		<p class="f1">Фильтр</p>
+	</div>		
+  <input id="CheckBox" type="checkbox" class="CheckBoxClass">
+  <label id="Label" for="CheckBox" class="CheckBoxLabelClass">Новый</label>
+  <input id="CheckBox1" type="checkbox" class="CheckBoxClass">
+  <label id="Label1" for="CheckBox1" class="CheckBoxLabelClass">Хит</label>
+ <script>
+$(document).ready(function(){  
+    $(".CheckBoxClass").change(function(){ 
+        if($(this).is(":checked")){
+            $(this).next("label").addClass("LabelSelected");
+        }else{   
+            $(this).next("label").removeClass("LabelSelected");
+        }  
+    });  
+});   
+ </script>
+ <div class="inp">
+   <div class="cen">
+     <label class="cena1">Наименование</label>
+	 <label class="cena1">Цена "до"</label>
+	 <label class="cena1">Цена "от"</label>
+  </div>
+ <div class="cen2">
+   <input type="text">
+   <input type="text">
+   <input type="text">
+  </div>
+ </div>		
+</div>
+</div>
+        <!--WRAP 2-->
+<div id="wrap2">
+  <div id="registraj">
+    <div class="info">   
+      <form>
+        <table class="tab">
+          <tr> 
+            <td>Адрес E-mail :<span class="zvezda">*</span></td><td> <input  type="text" type="email" required style="width:243px; height:26px"><span></span></td></tr>
+            <td>Имя: <span class="zvezda">*</span></td> <td><input  type="text" required="required" style="width:243px; height:26px"></td></tr>
+            <td>Дата рождения:</td><td> <input type="text" type="date" style="width:243px; height:26px"></td></tr>
+            <td>Город:<span class="zvezda">*</span></td><td> <input type="text" required="required" style="width:243px; height:26px"></td></tr>
+            <td>Пароль: <span class="zvezda">*</span></td><td> <input type="text" type="password" required="required" style="width:243px; height:26px"></td></tr>
+            <td>Подтверждения пароля:<span class="zvezda">*</span> </td><td> <input type="text" type="password" required="required" style="width:243px; height:26px"></td>
+           </tr>
+         </table>
+        <div class="print">
+          <input type="submit" value="Принять" />
+        </div>
+      </form>     
+     <p class="obz"><span class="zvezda">*</span>-Поля обязательные для заполнения</p>
+	</div>
+   </div>
+</div>
+<!--WRAP 3-->
+<div id="wrap3">
+ <!--basket-->
+ <div id="korzina">
+    <div class="korz">	
+	  <button  type="submit" ><img src="imges/korz.png" style="margin:4px 0 0 10px; float:left"><p class="kor">Ваша корзина пуста</button></p>
+	</div>
+  <div class="pola">
+    <p class="log">Логин</p><input type="text">
+	<p class="log">Пароль</p><input type="text">
+  </div>
+ <div class="vxod">
+ <button  type="submit"><p>Вход</p></button>
+<div class="dos">
+  <ul>
+   <li><a href="#">Регистрация</a></li>
+   <li><a href="#">Забыли пароль?</a></li>
+  </ul>
+  </div>
+ </div>
+</div>
+<!--aksesyaru-->
+ <div id="aksesyaru">
+   <div class="ak">
+     <p>Аксуссуары</p>
+   </div> 
+  <ul class="aks">
+    <li><a href="#">Карты памяти</a></li>
+	<li><a href="#">Гарнитуры</a></li>
+	<li><a href="#">Аккумуляторы</a></li>
+	<li><a href="#">Гарнитуры</a></li>
+	<li><a href="#">Аккумуляторы</a></li>
+	<li><a href="#">Защитные пленки</a></li>
+	<li><a href="#">Чехлы</a></li>
+  </ul> 
+ </div>
+</div>
+<div id="footer">
+  <div class="nm">
+    <div class="ft">
+      <img src="imges/f.png" />
+    </div> 
+   <div class="kontf">
+     <p>(078)765-31-10<br>
+	    (097)876-89-07</p>
+     <a href="#">Trubach.com.ua</a>
+   </div>
+  </div>
+ <div class="sulki">
+   <ul>
+     <li><a href="#">Главная</a></li>
+     <li><a href="#">Контакты</a></li>
+     <li><a href="#">Оплата</a></li>
+     <li><a href="#">Доставка</a></li>
+   </ul>
+  </div>
+ <div class="sulki2">
+   <ul>
+     <li><a href="#">Каталог</a></li>
+     <li><a href="#">Новинки</a></li>
+     <li><a href="#">Хиты продаж</a></li>
+     <li><a href="#">О компани</a></li>
+   </ul>
+  </div>
+</div> 
+</body>
+</html>

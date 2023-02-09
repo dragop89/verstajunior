@@ -1,0 +1,449 @@
+﻿<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Интернет магазин</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/liMenuVert.css">
+	<link rel="stylesheet" href="css/liMenuVertTheme-white.css">
+	<link rel="stylesheet" href="/themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" /> 
+	<script src="js/jquery-1.8.min.js"></script>
+  	<script src="js/jquery.liMenuVert.js"></script>
+   	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+  <script src="js/myscripts.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+    <script>
+        $(function () {
+            $('.menu_vert').liMenuVert();
+        });
+    </script>
+       <script>
+           $(function () {
+               $('.menu_vert').liMenuVert();
+           });
+    </script>
+      <script type="text/javascript">
+          $(document).ready(function () {
+              $("#karusel2").css("overflow", "hidden");
+              $("#last2").css("display", "block");
+              $("#next2").css("display", "block");
+              $('#karusel2 ul').cycle({
+                  fx: 'scrollLeft',
+                  pause: 1,
+                  next: '#next2',
+                  prev: '#last2',
+                  timeout: 0
+              });
+          });
+</script>   
+</head>
+<body>
+  <div id="ST">
+  <div id="page_header">
+  <div id="logotip">
+    <img src="imges/logo.png" alt="Интернет магазин">
+  </div>
+   <div id="tel">
+    <img src="imges/tel.png">
+   </div>
+  <div id="nomer">
+    (078)765-31-10<br>
+  (097)876-89-07
+  </div>
+ <div id="search">
+  <form>
+    <input name="q" type="text" />
+    <input type="submit" value="Поиск" />
+  </form>
+  </div>          
+ </div>
+ <!--Nav-->
+ <div id="ver_men">
+   <ul>
+    <li><a href="#">Каталог</a></li>
+    <li><a href="#">Новинки</a></li>
+    <li><a href="#">Хиты продаж</a></li>
+    <li><a href="#">Карта</a></li>
+  </ul>
+  </div>
+ <div id="navig">
+  <ul>
+    <li style="padding-top:15px"><a href="#">Главная</a></li>
+    <li style="padding-top:15px"><a href="#">О компинии</a></li>
+    <li style="padding-top:15px"><a href="#">Оплата</a></li>
+    <li style="padding-top:15px"><a href="#">Доставка</a></li>
+    <li style="padding-top:15px"><a href="#">Помощь</a></li>
+    <li style="padding-top:15px"><a href="#">Контакты</a></li>
+  </ul>
+ </div>
+  
+<div id="wrap">
+ <!--Kategorii-->
+  <div class="kateg">
+  <div class="nazv">
+    <p>Категории</p>
+  </div>
+  <div style="width:190px">
+    <ul class="menu_vert">
+    <li><a href="#">Смартфоны</a>
+      <ul>
+      <li><a href="#">HTC</a></li>
+        <li><a href="#">Samsung</a>
+        <ul>
+          <li><a href="#">Samsung Wawe 525</a></li>
+        <li><a href="#">Samsung G565</a></li>
+        <li><a href="#">Samsung W S50</a></li>
+        <li><a href="#">Samsung galaxy III</a></li>
+        </ul>
+        <li><a href="#">Nokia</a></li>
+      <li><a href="#">Aplle</a></li>
+      <li><a href="#">Sony Ericson</a></li>
+     </ul>
+    </li>
+    <li><a href="#">Моноблок</a>
+      <ul>
+      <li><a href="#">Nokia</a></li>
+      <li><a href="#">Samsung</a></li>
+      <li><a href="#">Motorola</a></li>
+      <li><a href="#">Sony Ericson</a></li>
+    </ul>
+     </li>
+    <li><a href="#">Бюджетные</a>
+    <ul>
+      <li><a href="#">Nokia</a></li>
+      <li><a href="#">LG</a></li>
+      <li><a href="#">Samsung</a></li>
+    </ul>
+      </li>
+  <li><a href="#">Слайдеры</a></li>
+  <li><a href="#">Слайдеры</a></li>
+  <li><a href="#">Слайдеры</a></li>
+    <li><a href="#">Слайдеры</a></li>
+  </ul>
+ </div>
+</div>  
+<!--Sortirovka-->
+<div id="filter">
+  <div class="vnav">
+    <div class="s">
+      <p class="ss">Сортировка</p>
+    </div>
+    <ul>
+      <li>Стоимость
+      <form>
+        <p>Стоимость</br>
+        <input id="CheckBox2" type="checkbox" class="CheckBoxClass">
+        <label id="Label" for="CheckBox2" class="CheckBoxLabelClass">Дорогие-дешовые</label>
+        <input id="CheckBox3" type="checkbox" class="CheckBoxClass">
+        <label id="Label1" for="CheckBox3" class="CheckBoxLabelClass">Дешовые-дорогие</label> 
+      </form>         
+       </li>
+      <li>Рейтинг<p>Know About our company</p></li>
+    <li>Алфавит<p>Check our Portfolio</p></li>
+    <li style="border-bottom-left-radius:8px; border-bottom-right-radius:8px;">Стоимость<p>Have a question?</p></li>
+     </ul>
+   <script>
+  $(document).ready(function(){
+  //When Mouse rolls over li  
+      $(".vnav ul li").mouseover(function(){
+        $(this).stop().animate({height:'80px'},{queue:false, duration:600})
+    });
+  //When Mouse cursor removed from li
+    $(".vnav ul li").mouseout(function(){
+        $(this).stop().animate({height:'20px'},{queue:false, duration:600})
+    });
+  });
+  </script>
+ </div>
+</div>
+<!--Filter-->
+<div id ="fil">
+  <div class="f">
+    <p class="f1">Фильтр</p>
+  </div>    
+  <input id="CheckBox" type="checkbox" class="CheckBoxClass">
+  <label id="Label" for="CheckBox" class="CheckBoxLabelClass">Новый</label>
+  <input id="CheckBox1" type="checkbox" class="CheckBoxClass">
+  <label id="Label1" for="CheckBox1" class="CheckBoxLabelClass">Хит</label>
+ <script>
+$(document).ready(function(){  
+    $(".CheckBoxClass").change(function(){ 
+        if($(this).is(":checked")){
+            $(this).next("label").addClass("LabelSelected");
+        }else{   
+            $(this).next("label").removeClass("LabelSelected");
+        }  
+    });  
+});   
+ </script>
+ <div class="inp">
+   <div class="cen">
+     <label class="cena1">Наименование</label>
+   <label class="cena1">Цена "до"</label>
+   <label class="cena1">Цена "от"</label>
+  </div>
+ <div class="cen2">
+   <input type="text">
+   <input type="text">
+   <input type="text">
+  </div>
+ </div>   
+</div>
+</div>
+<!--wrap2-->
+<div id="wrap2">
+  <div id="kartochka">
+    <div class="kr">
+      <img src="imges/kartochka_novinka.png" />
+    </div>
+   <div class="telefon">
+     <img src="imges/kartochka_tel.png"/>
+   </div>
+  <div class="nazvanie">
+    <p class="model4">Nokia Lumia 610 Black</p>
+    <p class="gr">Цена <span class="ob">1250</span> грн</p>
+    <button><p>Купить</p><img src="imges/kartochka_korzina.png" /></button>  
+    <p class="nalik">Есть в наличии</p>
+    <a href="#">Добавить в избранное</a>
+   </div>  
+  <table width="570px" >
+   <tr>
+     <td class="td1">Технические характеристики</td>
+     <td class="td1">S5360 Metallic Gray</td>
+   </tr>
+  <tr>
+    <td>Форм-фактор телефона</td>  
+    <td>Моноблок</td>   
+  </tr>
+ <tr>
+   <td>Процессор</td>
+   <td>832 МГц</td>
+  </tr>
+ <tr>
+   <td>Размеры</td>
+   <td>104 х 58 х 11.5</td>
+ </tr>
+<tr>
+  <td>Вес</td>
+  <td>97</td>
+</tr>
+<tr>
+  <td>Дисплей</td>
+  <td>TFT 3",сенсорный</td>
+</tr>
+<tr>
+  <td>Разрешение</td>
+  <td>240 х 320 262 тыс. цветов</td>
+</tr>
+<tr>
+  <td>Сигнал вызова</td>
+  <td>Виброзвонок, полифония</td>
+</tr>
+<tr>
+  <td>Камера</td>
+    <td>2 Мпикс (1600х1200)</td>
+</tr>
+<tr>
+  <td>Гео-теги</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Видео</td>
+  <td>mp4,avi</td>
+</tr>          
+<tr>
+  <td>Стандартр</td>
+  <td>GSM 850/ 900/1800</td>
+</tr>
+<tr>
+  <td>Функция памяти</td>
+  <td>Встроенная память</td>
+</tr>
+<tr>
+  <td>Работа с сообщениями</td>
+  <td>SMS, MMS, E-mail-клиент</td>
+</tr>
+<tr>
+  <td>3G:HSDPA</td>
+  <td></td>
+</tr> <tr>
+  <td>Питание</td>
+  <td>Литий-ионная батарея</td>
+</tr> <tr>
+  <td>Беспроводные технологии</td>
+  <td>Bluetooth 3.0</td>
+</tr>
+<tr>
+  <td>Операционная система</td>
+  <td>Android</td>
+  </tr> <tr>
+  <td>Комплект поставки</td>
+  <td>Мобильный телефон, зарядка, кабель</td>
+</tr>
+<tr>
+  <td>Galaxy Y</td>
+  <td></td>
+</tr> 
+<tr>
+  <td>Аккумудятор</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Зарядное устройство</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Цвет</td>
+  <td>Grey</td>
+ </tr>
+</table>
+</div>
+<!--slayder-->    
+<div id="sdk">
+  <img src="imges/kartochka_st1.png"  alt="next2" id="next2" width="20"/>
+   <div id="karusel2">
+     <ul>
+	     <li>
+          <div>
+            <img src="imges/zakaz.png" alt="testimage"  width="53" height="100"/>
+	          <p>Samsung GT-I9300</p>
+            <p>5281 <span>гр</span></p>
+            <p><a href="#">Подробнее</a></p>
+	         </div>
+          <div>
+            <img src="imges/zakaz.png" alt="testimage"  width="53" height="100"/>
+	          <p>Samsung GT-I9300</p>
+            <p>5281 <span>гр</span></p>
+            <p><a href="#">Подробнее</a></p>
+	        </div>
+        <div>
+          <img src="imges/zakaz.png" alt="testimage"  width="53" height="100"/>
+	        <p>Samsung GT-I9300</p>
+          <p>5281 <span>гр</span></p>
+          <p><a href="#">Подробнее</a></p>
+	      </div>
+       </li>
+      <li>
+        <div>
+          <img src="imges/zakaz.png" alt="testimage"  width="53" height="100"/>
+	        <p>Samsung GT-I9300</p>
+          <p>5281 <span>гр</span></p>
+          <p><a href="#">Подробнее</a></p>
+	     </div>
+      <div>
+        <img src="imges/zakaz.png" alt="testimage"  width="53" height="100"/>
+	      <p>Samsung GT-I9300</p>
+        <p>5281 <span>гр</span></p>
+        <p><a href="#">Подробнее</a></p>
+	     </div>
+      <div>
+        <img src="imges/zakaz.png" alt="testimage"  width="53" height="100"/>
+	      <p>Samsung GT-I9300</p>
+        <p>5281 <span>гр</span></p>
+        <p><a href="#">Подробнее</a></p>
+	     </div>
+      </li>
+	   </ul>
+   </div>
+    <img src="imges/kartochka_st.png"  alt="last2"  id="last2" width="24"/>
+  </div>
+ </div>
+</div>
+<!--wrap3-->
+<div id="wrap3">
+	 <div id="korzina">
+    <div class="korz">  
+    <button  type="submit" ><img src="imges/korz.png" style="margin:4px 0 0 10px; float:left"><p class="kor">Ваша корзина пуста</button></p>
+  </div>
+  <div class="pola">
+    <p class="log">Логин</p><input type="text">
+  <p class="log">Пароль</p><input type="text">
+  </div>
+ <div class="vxod">
+ <button  type="submit"><p>Вход</p></button>
+<div class="dos">
+  <ul>
+   <li><a href="#">Регистрация</a></li>
+   <li><a href="#">Забыли пароль?</a></li>
+  </ul>
+  </div>
+ </div>
+</div>
+<div id="otzovu">
+  <div class="pok">
+    <p>Отзывы покупателей</p>
+	</div>
+  <img src="imges/otzuv.png" /><a href="#" class="ostv">Оставить отзыв</a>
+ <div class="otzovu_napisat">
+   <p class="name">Имя</p>
+   <p>Дата</p>
+   <p class="k">Комментарий отображающий субьективное мнение пользователя о данном товаре...</p>
+   <div class="pol">
+ </div>
+</div>
+  <div class="otzovu_napisat">
+    <p class="name">Имя</p>
+    <p>Дата</p>
+    <p class="k">Комментарий отображающий субьективное мнение пользователя о данном товаре...</p>
+    <div class="pol">
+  </div>
+</div>
+ <div class="otzovu_napisat">
+  <p class="name">Имя</p>
+  <p>Дата</p>
+  <p class="k">Комментарий отображающий субьективное мнение пользователя о данном товаре...</p>
+  <div class="pol">
+ </div>
+</div>
+  <a href="#" class="slk">Смотреть все отзывы</a>
+ <script>
+     $(document).ready(function(){
+      $(".ostv").click(function(){
+        $(".ostavit").slideToggle("slow");
+       $(this).toggleClass("active"); return false;   
+      });
+      $(".com").click(function(){
+        $(".ostavit").slideToggle("hidden");
+        $(this).toggleClass("active"); return false;
+      });
+    });
+</script>
+ <div class="ostavit">
+   <input type="text" placeholder="Ваше имя.." />
+   <textarea name="comment" placeholder="Коментарий..."></textarea>
+   <button class="com">dfdf</button>
+  </div>
+ </div>
+</div>
+<div id="footer">
+  <div class="nm">
+    <div class="ft">
+      <img src="imges/f.png" />
+    </div> 
+   <div class="kontf">
+     <p>(078)765-31-10<br>
+      (097)876-89-07</p>
+     <a href="#">Trubach.com.ua</a>
+   </div>
+  </div>
+ <div class="sulki">
+   <ul>
+     <li><a href="#">Главная</a></li>
+     <li><a href="#">Контакты</a></li>
+     <li><a href="#">Оплата</a></li>
+     <li><a href="#">Доставка</a></li>
+   </ul>
+  </div>
+ <div class="sulki2">
+   <ul>
+     <li><a href="#">Каталог</a></li>
+     <li><a href="#">Новинки</a></li>
+     <li><a href="#">Хиты продаж</a></li>
+     <li><a href="#">О компани</a></li>
+   </ul>
+  </div>
+</div> 
+</body>
+</html>
